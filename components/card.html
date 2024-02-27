@@ -102,8 +102,9 @@
     </div>
     <script type="text/javascript">
 
-
-      //============== side fadeIn ====================//
+      /*
+      ########## side fadeIn #############
+      */
       function animateFrom(elem, direction) {
       	// console.log("fade");
       	direction = direction || 1;
@@ -159,19 +160,31 @@
       		});
       	});
       });
+      /*
+      ########## side fadeIn END #############
+      */
 
-      ////// ==========  Top Extend ==============//////
-      ScrollTrigger.create({
-      	// markers: true,
-      	start: "top",
-      	end: 999,
-      	trigger: document.querySelector(".intro"),
-      	onEnter: function () {
-      		offset = document.querySelector(".project").offsetTop;
-      		// window.scrollTo({ top: offset, behavior: 'smooth' })
-      	}
-      	// toggleClass: {className: 'intro--scrolled', targets: '.intro'},
+      /*
+      ########## modal #############
+      */
+      const modals = document.querySelectorAll('.modal');
+      const modalTriggers = document.querySelectorAll('.modal-trigger');
+      const closeButtons = document.querySelectorAll('.close-btn');
+
+      modalTriggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => {
+          modals[index].style.display = 'block';
+        });
       });
+
+      closeButtons.forEach((closeBtn, index) => {
+        closeBtn.addEventListener('click', () => {
+          modals[index].style.display = 'none';
+        });
+      });
+      /*
+      ########## modal END #############
+      */
     </script>
   </body>
 </html>
