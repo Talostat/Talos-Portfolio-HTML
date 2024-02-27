@@ -223,7 +223,9 @@
   cursor: pointer;
   position: absolute;
 }
-
+.modal-trigger {
+  z-index: 100;
+}
 .Heading {
   font-size: px;
   font-family: Inter;
