@@ -36,7 +36,8 @@
   justify-content: center;
 }
 .home-text {
-  font-size: 100px;
+  font-size: max(70%,100px);
+  font-family: "Spectral";
   margin-bottom: 30px;
 }
 .home-text01 {
