@@ -229,6 +229,7 @@
 
 
 .modal-size {
+  width: min(80vh, 500px);
   aspect-ratio: 1 / 1; ;
 }
 .Heading {

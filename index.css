@@ -232,6 +232,10 @@
   .home-icon-group {
     align-items: flex-end;
   }
+  .home-slider-slide {
+    background-size: cover;
+    background-image: url('https://picsum.photos/300/300?index=1');
+  }
   .home-section {
     position: relative;
   }
