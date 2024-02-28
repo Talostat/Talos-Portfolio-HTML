@@ -83,24 +83,27 @@
   flex-direction: column;
 }
 .home-slider {
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   display: inline-block;
 }
 .home-slider-slide {
   display: flex;
-  background-size: 100%;
-  background-image: url('https://images.unsplash.com/photo-1698778574083-279be0ac6681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzU2N3w&ixlib=rb-4.0.3&q=80&w=500');
+}
+.home-image1 {
+  object-fit: cover;
 }
 .home-slider-slide1 {
   display: flex;
-  background-size: 100%;
-  background-image: url('https://images.unsplash.com/photo-1697384333613-de519c7367c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzAzN3w&ixlib=rb-4.0.3&q=80&w=500');
+}
+.home-image2 {
+  object-fit: cover;
 }
 .home-slider-slide2 {
   display: flex;
-  background-size: 100%;
-  background-image: url('https://images.unsplash.com/photo-1698180687511-bd6c0104ee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTk3NzQ5NXw&ixlib=rb-4.0.3&q=80&w=500');
+}
+.home-image3 {
+  object-fit: cover;
 }
 .home-slider-pagination {
   display: block;
@@ -109,7 +112,7 @@
   transition: 0.3s;
 }
 
-.home-image1 {
+.home-image4 {
   width: 100%;
   height: 100%;
   transition: 0.3s;
@@ -118,11 +121,11 @@
 .home-card2 {
   order: 1;
 }
-.home-image2 {
+.home-image5 {
   width: 100%;
   height: 100%;
 }
-.home-image3 {
+.home-image6 {
   width: 100%;
   height: 100%;
 }
@@ -134,17 +137,9 @@
   justify-content: center;
 }
 .home-container5 {
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-threeunits);
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.home-container6 {
   flex: 0 0 auto;
   width: 100%;
+  margin: auto;
   display: flex;
   position: relative;
   flex-flow: row wrap;
@@ -164,7 +159,7 @@
   justify-content: space-between;
   background-color: #000000;
 }
-.home-container7 {
+.home-container6 {
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
@@ -245,11 +240,14 @@
   .home-section {
     position: relative;
   }
-  .home-container6 {
+  .home-container5 {
     justify-content: space-between;
   }
 }
 @media(max-width: 767px) {
+  .home-container5 {
+    justify-content: center;
+  }
   .home-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);

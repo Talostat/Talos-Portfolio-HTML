@@ -109,7 +109,6 @@
   align-items: center;
   border-bottom: solid black;
   margin-bottom: var(--dl-space-space-fiveunits);
-  text-decoration: underline;
 }
 .section-project {
   flex: 0 0 auto;
@@ -140,7 +139,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
 }
 .card-body {
-  width: 250px;
+  width: 270px;
   margin: var(--dl-space-space-twounits);
   display: flex;
   padding: var(--dl-space-space-unit);
