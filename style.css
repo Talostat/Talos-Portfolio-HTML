@@ -252,6 +252,9 @@
     order: 2;
     padding-right: 0;
   }
+  .main {
+    font-family: A;
+  }
   .intro {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
