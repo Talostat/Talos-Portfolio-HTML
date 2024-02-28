@@ -253,7 +253,7 @@
     padding-right: 0;
   }
   .main {
-    font-family: A;
+    font-family: sans-serif;
   }
   .intro {
     padding-left: var(--dl-space-space-twounits);
