@@ -193,7 +193,7 @@
   align-items: center;
   justify-content: center;
 }
-.home-container3 {
+.home-container4 {
   flex: 0 0 auto;
   width: 100%;
   margin: auto;
@@ -216,7 +216,7 @@
   justify-content: space-between;
   background-color: #000000;
 }
-.home-container4 {
+.home-container5 {
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
@@ -303,12 +303,12 @@
     background-size: cover;
     background-image: url('https://picsum.photos/300/300?index=1');
   }
-  .home-container3 {
+  .home-container4 {
     justify-content: space-between;
   }
 }
 @media(max-width: 767px) {
-  .home-container3 {
+  .home-container4 {
     justify-content: center;
   }
   .home-footer {
