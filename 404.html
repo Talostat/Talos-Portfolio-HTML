@@ -119,6 +119,23 @@
     </div>
     <script type="text/javascript">
 
+      /* ######  screenRotate  ########   */
+      let rotated = false;
+      const circleButton = document.querySelector('#circleButton');
+      circleButton.addEventListener('click', function() {
+        if (!rotated) {
+          // If not rotated, rotate the screen
+          screenRotate(90);
+          rotated = true;
+        } else {
+          // If already rotated, rotate the screen back
+          screenRotate(0);
+          rotated = false;
+        }
+      });
+      function screenRotate(deg) {
+        document.body.style.cssText += `-webkit-transform: rotate(${deg}deg); -moz-transform: rotate(${deg}deg); transform: rotate(${deg}deg)`;
+      }
       /*
       ########## side fadeIn #############
       */
