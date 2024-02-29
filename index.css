@@ -314,10 +314,10 @@
   }
   .home-button {
     top: 0px;
+    width: 50px;
     border: none;
     cursor: pointer;
     height: 50px;
-    widows: 50px;
     position: absolute;
     border-radius: 50%;
     background-color: var(--dl-color-gray-900);

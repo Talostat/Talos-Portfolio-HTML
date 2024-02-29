@@ -514,21 +514,30 @@
     <script type="text/javascript">
 
       /* ######  screenRotate  ########   */
-      let rotated = false;
-      const circleButton = document.querySelector('#circleButton');
-      circleButton.addEventListener('click', function() {
-        if (!rotated) {
-          // If not rotated, rotate the screen
-          screenRotate(90);
-          rotated = true;
-        } else {
-          // If already rotated, rotate the screen back
-          screenRotate(0);
-          rotated = false;
+      // Get the circle button element
+      const circleButton = document.getElementById('rotateBtn');
+      // Check if the circle button exists before adding the event listener
+      if (circleButton) {
+        // Flag to track rotation state
+        let rotated = false;
+
+        // Add a click event listener
+        circleButton.addEventListener('click', function() {
+          // Toggle rotation state
+          rotated = !rotated;
+
+          // Rotate or reset the screen based on the rotation state
+          if (rotated) {
+            screenRotate(90);
+          } else {
+            screenRotate(0);
+          }
+        });
+        function screenRotate(deg) {
+          document.body.style.cssText += `-webkit-transform: rotate(${deg}deg); -moz-transform: rotate(${deg}deg); transform: rotate(${deg}deg)`;
         }
-      });
-      function screenRotate(deg) {
-        document.body.style.cssText += `-webkit-transform: rotate(${deg}deg); -moz-transform: rotate(${deg}deg); transform: rotate(${deg}deg)`;
+      } else {
+        console.error("Circle button not found!");
       }
       /*
       ########## side fadeIn #############
