@@ -231,6 +231,7 @@
 .modal-size {
   width: min(85vw, 600px);
   aspect-ratio: 1 / 1; ;
+  pointer-events: auto;
 }
 .line {
   top: 0;
