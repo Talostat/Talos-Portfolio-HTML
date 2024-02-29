@@ -115,9 +115,6 @@
   transition: 0.3s;
 }
 
-.home-modal1 {
-  display: flex;
-}
 .home-slider1 {
   display: inline-block;
 }
@@ -154,9 +151,6 @@
 .home-image08 {
   width: 100%;
   height: 100%;
-}
-.home-modal2 {
-  display: flex;
 }
 .home-slider2 {
   display: inline-block;
