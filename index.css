@@ -313,6 +313,7 @@
     position: relative;
   }
   .home-button {
+    top: 0px;
     border: none;
     cursor: pointer;
     height: 50px;
