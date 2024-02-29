@@ -226,7 +226,9 @@
 
 
 
-
+.modal-dialog-centered {
+  justify-content: center;
+}
 
 .modal-size {
   width: min(85vw, 600px);
