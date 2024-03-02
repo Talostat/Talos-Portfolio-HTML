@@ -185,11 +185,7 @@
           <div class="page">
             <h1 class="page-title">PROJECT&nbsp; EXPERIENCE</h1>
             <div class="gs_reveal section-project home-section">
-              <div
-                data-target="#Modal1"
-                data-toggle="modal"
-                class="home-card1 card-project modal-trigger card"
-              >
+              <div id="pj1" class="home-card1 card-project modal-trigger card">
                 <img alt="image" src="public/lims-200h.png" class="image" />
                 <img
                   alt="image"
@@ -498,6 +494,9 @@
       /*
       ########## modal END #############
       */
+
+
+      const gallery = new Viewer(document.getElementById('pj1'), {toolbar:0});
     </script>
     <script
       defer=""
