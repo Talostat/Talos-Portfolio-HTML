@@ -81,6 +81,10 @@
   width: 200px;
   margin-bottom: var(--dl-space-space-fourunits);
 }
+.home-image {
+  width: 200px;
+  object-fit: cover;
+}
 .home-text05 {
   max-width: 1000px;
   text-align: justify;
@@ -102,7 +106,7 @@
 }
 .home-image4 {
   width: 100%;
-  height: 100%;
+  height: 474px;
 }
 .home-section-body1 {
   width: min(100%,800px);
@@ -136,6 +140,7 @@
 }
 .home-link2 {
   color: var(--dl-color-primary-100);
+  text-decoration: underline;
 }
 .home-skills {
   align-items: center;
@@ -154,19 +159,19 @@
 .home-card5 {
   position: relative;
 }
-.home-text45 {
+.home-text46 {
   text-align: center;
 }
 .home-card6 {
   position: relative;
 }
-.home-text59 {
+.home-text60 {
   text-align: center;
 }
 .home-card7 {
   position: relative;
 }
-.home-text78 {
+.home-text79 {
   text-align: center;
 }
 .home-footer {
@@ -196,11 +201,8 @@
   align-items: center;
   flex-direction: row;
 }
-.home-text90 {
-  margin-left: 0px;
-}
 .home-text91 {
-  margin-left: var(--dl-space-space-unit);
+  margin-left: 0px;
 }
 .home-text92 {
   margin-left: var(--dl-space-space-unit);
@@ -209,6 +211,9 @@
   margin-left: var(--dl-space-space-unit);
 }
 .home-text94 {
+  margin-left: var(--dl-space-space-unit);
+}
+.home-text95 {
   margin-left: var(--dl-space-space-unit);
 }
 .home-separator {
