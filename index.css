@@ -179,33 +179,12 @@
   background-color: #000000;
 }
 .home-container2 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-}
-.home-nav {
-  flex: 0 0 auto;
-  display: flex;
-  margin-top: 0px;
-  align-items: center;
-  flex-direction: row;
-}
-.home-text91 {
-  margin-left: 0px;
-}
-.home-text92 {
-  margin-left: var(--dl-space-space-unit);
-}
-.home-text93 {
-  margin-left: var(--dl-space-space-unit);
-}
-.home-text94 {
-  margin-left: var(--dl-space-space-unit);
-}
-.home-text95 {
-  margin-left: var(--dl-space-space-unit);
 }
 .home-separator {
   flex: 0 0 auto;
