@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Talos-Portfolio</title>
+    <meta property="og:title" content="Talos-Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "";
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        null
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+
+    <!--JS-->
+
+    <!-- Viewer.js -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css"
+      integrity="sha512-za6IYQz7tR0pzniM/EAkgjV1gf1kWMlVJHBHavKIvsNoUMKWU99ZHzvL6lIobjiE2yKDAKMDSSmcMAxoiWgoWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"
+      integrity="sha512-EC3CQ+2OkM+ZKsM1dbFAB6OGEPKRxi6EDRnZW9ys8LghQRAq6cXPUgXCCujmDrXdodGXX9bqaaCRtwj4h4wgSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-main main">
+          <div class="home-intro">
+            <div class="home-content page intro">
+              <div class="home-name">
+                <div class="home-name-heading">
+                  <h2 class="home-firstname">
+                    <span>Talos</span>
+                    <br />
+                  </h2>
+                  <h2 class="home-lastname">
+                    <span>Cheung</span>
+                    <br />
+                  </h2>
+                </div>
+                <span class="home-intro-content">
+                  A Passionate coder turning ideas into reality. Explore my
+                  journey and projects below.
+                </span>
+              </div>
+              <div class="home-contact-icon-group">
+                <a href="mailto:tat0070@hotmail.com?subject=" class="home-link">
+                  <svg viewBox="0 0 1024 1024" class="home-icon icon">
+                    <path
+                      d="M928 128h-832c-52.8 0-96 43.2-96 96v640c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-640c0-52.8-43.2-96-96-96zM398.74 550.372l-270.74 210.892v-501.642l270.74 290.75zM176.38 256h671.24l-335.62 252-335.62-252zM409.288 561.698l102.712 110.302 102.71-110.302 210.554 270.302h-626.528l210.552-270.302zM625.26 550.372l270.74-290.75v501.642l-270.74-210.892z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/talos-cheung"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link1"
+                >
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon2 icon"
+                  >
+                    <path
+                      d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button id="rotateBtn" type="button" class="home-button">
+              Button
+            </button>
+          </div>
+          <div class="page">
+            <h1 class="page-title">ABOUT ME</h1>
+            <div class="home-card card">
+              <img
+                alt="image"
+                src="https://picsum.photos/300/300?index=1"
+                class="image"
+              />
+            </div>
+            <span class="home-text05">
+              <span>
+                With 6 years of coding under the belt, the journey started in
+                biotech as a DNA Specialist. This role laid a solid foundation
+                in handling and analyzing data, which eventually led to a
+                passion for programming.
+              </span>
+              <br />
+              <br />
+              <span>
+                The early days involved mastering Excel functions and learning
+                VBA macros for data updates, calculations, and visualization,
+                making things much easier and faster. From there, it was on to
+                databases (SQL) and web development (HTML, JavaScript, PHP,
+                Laravel) to help maintain and improve internal systems.
+              </span>
+              <br />
+              <br />
+              <span>
+                Over time, skills expanded to include data analysis, automation,
+                web apps, and cloud services. Along the way, various programming
+                languages were picked up, working on both front and back-end
+                projects, including building internal company apps, mobile
+                applications, and even AI GPT services. Experience with cloud
+                platforms like AWS and Alibaba includes setting up servers and
+                services, and developing internal mobile apps with both backend
+                and front-end design.
+              </span>
+              <br />
+              <br />
+              <span>
+                Recently, the focus has been on cloud deployment for data
+                processing and integrating trendy AI applications.
+              </span>
+              <br />
+              <br />
+              <span>
+                On a personal note, there’s a love for creating handy tools to
+                help my friends non-coders with their tasks, and exploring MQL5
+                for forex trading, working on and testing personal EA programs.
+                Always excited about new tech, there’s a constant eagerness to
+                learn more and a drive to make projects more efficient and
+                effective.
+              </span>
+              <br />
+              <br />
+            </span>
+          </div>
+          <div class="page">
+            <h1 class="page-title">PROJECT&nbsp; EXPERIENCE</h1>
+            <div class="gs_reveal section-project home-section">
+              <div id="pj1" class="home-card1 card-project card">
+                <img alt="image" src="public/lims.png" class="image" />
+                <img alt="image" src="public/lims2.png" class="image hide" />
+              </div>
+              <div class="home-section-body section-pj-r">
+                <h2 class="section-body-title">
+                  Laboratory Information Management Systems (LIMS)
+                </h2>
+                <span>
+                  This was my first time participating in a web development
+                  project, using PHP to learn the Laravel framework. Starting
+                  from scratch with code, I developed the necessary internal
+                  data management functions based on the existing system,
+                  designed interfaces, and optimized the laboratory data
+                  processing workflow. Later, I proactively proposed and
+                  implemented partial management workflows. The whole system was
+                  managed very well, and it received a lot of praise from
+                  colleagues.
+                </span>
+              </div>
+            </div>
+            <div class="gs_reveal section-project">
+              <div
+                id="pj2"
+                data-target=""
+                data-toggle="modal"
+                class="home-card2 card-project card"
+              >
+                <img
+                  alt="image"
+                  src="public/gpt.png"
+                  class="home-image3 image hide"
+                />
+                <img
+                  alt="image"
+                  src="public/gpt2-700h.jpg"
+                  class="home-image4 image"
+                />
+              </div>
+              <div class="home-section-body1 section-pj-l">
+                <h2 class="section-body-title home-heading">
+                  <span>GPT ChatBot</span>
+                  <br />
+                </h2>
+                <span>
+                  <span>
+                    In this GPT Chatbot project, I leveraged natural language
+                    processing and artificial intelligence to create a
+                    conversational chatbot for WhatsApp using OpenAI's GPT
+                    technology. The goal was to design a chatbot that could
+                    address typical product and report queries while also being
+                    trained to handle responses with professional content and
+                    terminology.
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                  <span>
+                    I oversaw the entire development process, from
+                    conceptualization to implementation. Focus was placed on
+                    training the GPT model to understand and respond to a wide
+                    range of queries, including those requiring specialized
+                    knowledge and vocabulary. By deploying this GPT chatbot on
+                    WhatsApp, customer support services were enhanced, providing
+                    faster and more accurate responses, ultimately improving the
+                    overall user experience.
+                  </span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+            <div class="gs_reveal section-project">
+              <div
+                data-target="#Modal3"
+                data-toggle="modal"
+                class="card-project card"
+              >
+                <img
+                  alt="image"
+                  src="public/kit.png"
+                  class="home-image5 image"
+                />
+              </div>
+              <div class="home-section-body2 section-pj-r">
+                <h2 class="section-body-title home-text33">
+                  Kit Tracking System
+                </h2>
+                <span>
+                  <span>
+                    I engineered a comprehensive solution called the 'Kit
+                    Tracking System,' meticulously crafted to monitor and
+                    oversee kits dispatched for diverse applications. This
+                    system provides an intuitive interface for logging kit
+                    numbers, shipping IDs, and promptly updating delivery
+                    statuses. Tailored with the specific needs of staff members
+                    across mainland China and Hong Kong in mind, it guarantees
+                    effortless tracking and administration of all dispatched
+                    kits. Its ergonomic design fosters seamless navigation,
+                    empowering users to navigate effortlessly and enhancing
+                    operational efficiency, thereby ensuring the punctual
+                    delivery of every kit.
+                  </span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="page">
+            <h1 class="page-title">DEMONSTRATION PROJECT</h1>
+            <div class="gs_reveal section-project home-section3">
+              <div id="pj1" class="home-card4 card-project card">
+                <img
+                  alt="image"
+                  src="public/traffic1-800w.png"
+                  class="home-image6"
+                />
+                <img
+                  alt="image"
+                  src="public/traffic_flow-200h.png"
+                  class="home-image7"
+                />
+              </div>
+              <div class="home-section-body3 section-pj-r">
+                <h2 class="section-body-title">
+                  <span>AWS Athena &amp; Tableau:</span>
+                  <br />
+                  <span>HongKong Cross-Border Traffic Analysis</span>
+                </h2>
+                <span>
+                  My project focuses on analyzing daily cross-border traffic in
+                  Hong Kong (2019-2024) and its correlation with holiday
+                  statistics. Leveraging AWS Athena, Glue, and S3, I automated
+                  data collection, storage, and querying. Tableau was used to
+                  visualize trends, facilitating data-driven insights. This
+                  project showcases my skills in AWS services and data analysis
+                  for informed decision-making.
+                </span>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link2"
+                >
+                  Click to View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-skills page">
+            <h1 class="page-title">TECHINICAL SKILLS</h1>
+            <div class="home-container1">
+              <div class="home-card5 gs_reveal card-body card">
+                <h2 class="card-body-title">Programming Language</h2>
+                <span class="home-text45 card-body-content">
+                  <span>PHP</span>
+                  <br />
+                  <span>Python</span>
+                  <br />
+                  <span>JavaScript</span>
+                  <br />
+                  <span>VBA</span>
+                  <br />
+                  <span>SQL</span>
+                  <br />
+                  <span>HTML &amp; CSS</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-card6 gs_reveal card-body card">
+                <h2 class="card-body-title">Ability</h2>
+                <span class="home-text59 card-body-content">
+                  <span>Customized Analysis Tool</span>
+                  <br />
+                  <span>Software Development</span>
+                  <br />
+                  <span>Web Development</span>
+                  <br />
+                  <span>GPT application</span>
+                  <br />
+                  <span>IT Support</span>
+                  <br />
+                  <span>Data Analysis</span>
+                  <br />
+                  <span>Statistical Analysis</span>
+                  <br />
+                  <span>Data Visualization</span>
+                  <br />
+                  <br />
+                </span>
+              </div>
+              <div class="home-card7 gs_reveal card-body card">
+                <h2 class="card-body-title">Cloud Services</h2>
+                <span class="home-text78 card-body-content">
+                  <span>AWS EC2</span>
+                  <br />
+                  <span>Lightsail</span>
+                  <br />
+                  <span>Lambda</span>
+                  <br />
+                  <span>Glue</span>
+                  <br />
+                  <span>Athena</span>
+                  <br />
+                  <span>S3</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <footer class="home-footer">
+            <div class="home-container2">
+              <nav class="home-nav">
+                <span class="home-text90">About</span>
+                <span class="home-text91">Features</span>
+                <span class="home-text92">Pricing</span>
+                <span class="home-text93">Team</span>
+                <span class="home-text94">Blog</span>
+              </nav>
+            </div>
+            <div class="home-separator"></div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+      /* ######  screenRotate  ########   */
+      // Get the circle button element
+      const circleButton = document.getElementById('rotateBtn');
+      // Check if the circle button exists before adding the event listener
+      if (circleButton) {
+        // Flag to track rotation state
+        let rotated = false;
+
+        // Add a click event listener
+        circleButton.addEventListener('click', function() {
+          // Toggle rotation state
+          rotated = !rotated;
+
+          // Rotate or reset the screen based on the rotation state
+          if (rotated) {
+            screenRotate(90);
+          } else {
+            screenRotate(0);
+          }
+        });
+        function screenRotate(deg) {
+          document.body.style.cssText += `-webkit-transform: rotate(${deg}deg); -moz-transform: rotate(${deg}deg); transform: rotate(${deg}deg)`;
+        }
+      } else {
+        console.error("Circle button not found!");
+      }
+      /*
+      ########## side fadeIn #############
+      */
+      function animateFrom(elem, direction) {
+      	// console.log("fade");
+      	direction = direction || 1;
+      	var x = 0,
+      		y = direction * 100;
+      	if (elem.classList.contains("gs_reveal_fromLeft")) {
+      		x = -100;
+      		y = 0;
+      	} else if (elem.classList.contains("gs_reveal_fromRight")) {
+      		x = 100;
+      		y = 0;
+      	}
+      	elem.style.transform = "translate(" + x + "px, " + y + "px)";
+      	elem.style.opacity = "0";
+      	gsap.fromTo(
+      		elem,
+      		{ x: x, y: y, autoAlpha: 0 },
+      		{
+      			duration: 3,
+      			x: 0,
+      			y: 0,
+      			autoAlpha: 1,
+      			ease: "expo",
+      			overwrite: "auto"
+      		}
+      	);
+      }
+
+      function hide(elem) {
+      	gsap.set(elem, { autoAlpha: 0 });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+      	gsap.registerPlugin(ScrollTrigger);
+      	gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+      		hide(elem); // assure that the element is hidden when scrolled into view
+      		ScrollTrigger.create({
+      			// markers: true,
+      			trigger: elem,
+      			// onToggle: () => console.log("created"),
+      			onEnter: function () {
+      				animateFrom(elem);
+      			},
+      			onEnterBack: function () {
+      				animateFrom(elem, -1);
+      			},
+      			onLeave: function () {
+      				hide(elem);
+      			}, // assure that the element is hidden when scrolled into
+      			onLeaveBack: function () {
+      				hide(elem);
+      			}
+      		});
+      	});
+      });
+      /*
+      ########## side fadeIn END #############
+      */
+
+      /*
+      ########## modal #############
+      */
+      const modals = document.querySelectorAll('.modal');
+      const modalTriggers = document.querySelectorAll('.modal-trigger');
+      const closeButtons = document.querySelectorAll('.close-btn');
+
+      modalTriggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => {
+          modals[index].style.display = 'block';
+        });
+      });
+
+      closeButtons.forEach((closeBtn, index) => {
+        closeBtn.addEventListener('click', () => {
+          modals[index].style.display = 'none';
+        });
+      });
+      /*
+      ########## modal END #############
+      */
+
+
+      const gallery = new Viewer(document.getElementById('pj1'), {toolbar:0});
+    </script>
+  </body>
+</html>
