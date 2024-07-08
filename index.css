@@ -10,17 +10,17 @@
   justify-content: center;
   background-color: #0c0b0b;
 }
-.home-content {
-  justify-content: center;
-  background-color: transparent;
-  animation-duration: 2s;
+.home-container1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .home-name {
   color: var(--dl-color-gray-white);
   margin: var(--dl-space-space-threeunits);
   display: flex;
   z-index: 100;
-  position: absolute;
   flex-wrap: wrap;
   align-self: center;
   align-items: center;
@@ -55,12 +55,9 @@
   margin-bottom: 30px;
 }
 .home-contact-icon-group {
-  left: 466px;
   width: 287px;
-  bottom: 126px;
   height: 155px;
   display: flex;
-  position: absolute;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -146,7 +143,7 @@
   align-items: center;
   justify-content: center;
 }
-.home-container1 {
+.home-container2 {
   width: 100%;
   margin: auto;
   display: flex;
@@ -178,7 +175,7 @@
   justify-content: space-between;
   background-color: #000000;
 }
-.home-container2 {
+.home-container3 {
   border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -204,12 +201,17 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
+.home-content {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  animation-duration: 2s;
+}
 @media(max-width: 1600px) {
-  .home-content {
-    position: relative;
-  }
-  .home-contact-icon-group {
-    align-items: flex-end;
+  .home-container1 {
+    align-items: center;
   }
   .home-section {
     position: relative;
@@ -226,23 +228,15 @@
   .home-section3 {
     position: relative;
   }
+  .home-content {
+    position: relative;
+  }
 }
 @media(max-width: 767px) {
   .home-intro {
     position: relative;
   }
-  .home-button {
-    top: 0px;
-    width: 50px;
-    border: none;
-    cursor: pointer;
-    height: 50px;
-    display: none;
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--dl-color-gray-900);
-  }
-  .home-container1 {
+  .home-container2 {
     justify-content: center;
   }
   .home-footer {
@@ -254,6 +248,13 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .home-content {
+    z-index: 100;
+    align-items: center;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
   }
 }
 @media(max-width: 360px) {

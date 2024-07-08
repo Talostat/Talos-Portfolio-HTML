@@ -113,7 +113,7 @@
       <div class="home-container">
         <div class="home-main main">
           <div class="home-intro">
-            <div class="home-content page intro">
+            <div class="home-container1 page intro">
               <div class="home-name">
                 <div class="home-name-heading">
                   <h2 class="home-firstname">
@@ -155,14 +155,11 @@
                 </a>
               </div>
             </div>
-            <button id="rotateBtn" type="button" class="home-button">
-              Button
-            </button>
           </div>
           <div class="page">
             <h1 class="page-title">ABOUT ME</h1>
             <div class="home-card card">
-              <img src="public/t-200w.png" alt="image" class="home-image" />
+              <img alt="image" src="public/t-200w.png" class="home-image" />
             </div>
             <span class="home-text05">
               <span>
@@ -287,11 +284,7 @@
               </div>
             </div>
             <div class="gs_reveal section-project">
-              <div
-                data-target="#Modal3"
-                data-toggle="modal"
-                class="card-project card"
-              >
+              <div data-toggle="modal" id="pj3" class="card-project card">
                 <img
                   alt="image"
                   src="public/kit.png"
@@ -325,7 +318,7 @@
           <div class="page">
             <h1 class="page-title">DEMONSTRATION PROJECT</h1>
             <div class="gs_reveal section-project home-section3">
-              <div id="pj1" class="home-card4 card-project card">
+              <div id="pj4" class="home-card4 card-project card">
                 <img
                   alt="image"
                   src="public/traffic1-800w.png"
@@ -366,7 +359,7 @@
           </div>
           <div class="home-skills page">
             <h1 class="page-title">TECHINICAL SKILLS</h1>
-            <div class="home-container1">
+            <div class="home-container2">
               <div class="home-card5 gs_reveal card-body card">
                 <h2 class="card-body-title">Programming Language</h2>
                 <span class="card-body-content">
@@ -425,9 +418,10 @@
             </div>
           </div>
           <footer class="home-footer">
-            <div class="home-container2"></div>
+            <div class="home-container3"></div>
             <div class="home-separator"></div>
           </footer>
+          <div class="home-content page intro"></div>
         </div>
       </div>
     </div>
@@ -544,7 +538,16 @@
       */
 
 
-      const gallery = new Viewer(document.getElementById('pj1'), {toolbar:0});
+      //const gallery = new Viewer(document.getElementById('pj1'), {toolbar:0});
+
+      // 假设你已经在HTML中包含了Viewer.js库
+      for (let i = 1; i <= 10; i++) {
+        const elementId = `pj${i}`;
+        const element = document.getElementById(elementId);
+        if (element) {
+          const viewer = new Viewer(element, { toolbar: 0 });
+        }
+      }
     </script>
   </body>
 </html>
